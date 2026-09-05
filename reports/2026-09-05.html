@@ -1,0 +1,74 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20gradientTransform%3D%22rotate%2881%20.5%20.5%29%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%231d9bf0%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230f6fb8%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Ccircle%20cx%3D%2249%22%20cy%3D%2244%22%20r%3D%2219%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223%22%20opacity%3D%220.15%22%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2214%22%20r%3D%2212%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%224%22%20opacity%3D%220.13%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2232%22%20dy%3D%22.36em%22%20text-anchor%3D%22middle%22%20font-family%3D%27Georgia%2C%22Times%20New%20Roman%22%2Cserif%27%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%3EX%3C%2Ftext%3E%3C%2Fsvg%3E"><title>X · AI 日报 · 2026-09-05</title><style>
+*{box-sizing:border-box}
+body{margin:0;background:#f4f5f7;color:#16171a;
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,sans-serif;
+ font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:660px;margin:0 auto;padding:0 0 64px}
+header{padding:22px 18px 16px}
+h1{font-size:22px;margin:0;font-weight:800;letter-spacing:.5px}
+.sub{color:#8a8f98;font-size:13px;margin-top:6px}
+.warn{margin:0 18px 12px;background:#fff7e6;border:1px solid #ffe0a3;color:#8a5a00;padding:10px 12px;border-radius:10px;font-size:14px}
+/* 今日要点 */
+.brief{margin:0 18px 14px;background:#101418;color:#e8eaee;border-radius:14px;padding:14px 16px}
+.brief-head{font-size:13px;font-weight:700;letter-spacing:1px;color:#ffd866;margin-bottom:8px}
+.brief ol{margin:0;padding-left:20px}
+.brief li{margin:6px 0;font-size:14.5px;line-height:1.65}
+.brief a{color:#e8eaee;text-decoration:none;border-bottom:1px dashed #4a5260}
+/* 分数徽标 / 试读 / 折叠 */
+.badge{flex:0 0 auto;font-size:11px;font-weight:700;padding:1px 8px;border-radius:999px;letter-spacing:.3px}
+.badge.hi{background:#e8f1ff;color:#1d4fd7;border:1px solid #c9dcff}
+.badge.mid{background:#f0f1f3;color:#5b6570;border:1px solid #e2e4e8}
+.badge.lo{background:#f6f6f7;color:#9aa0a8;border:1px solid #ebecee}
+.trial{margin-left:7px;font-size:11px;font-weight:600;color:#b25e09;background:#fff3e0;
+ border:1px solid #ffd9a8;border-radius:999px;padding:1px 8px;vertical-align:2px}
+.fold{margin-top:6px}
+.fold summary{cursor:pointer;color:#9aa0a8;font-size:13px;padding:8px 0;user-select:none}
+.fold .post{opacity:.75}
+/* 顶部博主索引 */
+.index{display:flex;gap:8px;overflow-x:auto;padding:6px 18px 16px;-webkit-overflow-scrolling:touch}
+.index::-webkit-scrollbar{display:none}
+.idx{flex:0 0 auto;display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #e7e8ec;
+ border-radius:999px;padding:4px 12px 4px 4px;text-decoration:none;color:#3a3f47;font-size:13px;white-space:nowrap}
+.idx-av{width:24px;height:24px;border-radius:50%;object-fit:cover}
+/* 博主分区 */
+.author{margin-top:10px;background:#fff;border-top:1px solid #e7e8ec;border-bottom:1px solid #e7e8ec}
+.author-head{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:11px;
+ padding:11px 18px;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(8px);
+ border-bottom:1px solid #eceef1}
+.avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:0 0 auto;background:#e7e8ec}
+.ah-text{flex:1;min-width:0}
+.ah-name{font-weight:700;font-size:16px}
+.ah-handle{color:#9aa0a8;font-weight:400;font-size:13px;margin-left:5px}
+.ah-title{color:#5b6570;font-size:13px;margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ah-count{flex:0 0 auto;color:#9aa0a8;font-size:12px}
+.posts{padding:4px 18px 16px}
+/* 单条 */
+.post{padding:14px 0;border-top:1px solid #f0f1f3}
+.post:first-child{border-top:0}
+.p-top{display:flex;align-items:center;gap:8px;margin-bottom:5px;font-size:12px}
+.rt{color:#8a8f98}
+.meta{color:#9aa0a8;margin-left:auto}
+.p-body{word-break:break-word}
+.p-body a,.q-body a,.lc-title{color:#2f6df6;text-decoration:none}
+.media-wrap{margin-top:10px}
+.media-wrap.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.media{position:relative}
+.media img{width:100%;display:block;border-radius:12px;border:1px solid #eceef1}
+.media.vid .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:34px;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.quoted{margin-top:10px;border:1px solid #eceef1;border-radius:12px;padding:10px 12px;background:#fafbfc}
+.q-head{font-size:14px;font-weight:600;margin-bottom:3px}
+.q-at{color:#9aa0a8;font-weight:400}
+.q-body{font-size:15px}
+.linkcard{display:block;margin-top:10px;border:1px solid #eceef1;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit}
+.linkcard img{width:100%;display:block}
+.lc-title{padding:9px 12px;font-size:14px}
+/* 解读高亮 */
+.insight{display:flex;gap:8px;margin-top:11px;padding:10px 12px;border-radius:10px;
+ background:#eef3ff;border:1px solid #dbe6ff;font-size:14.5px;line-height:1.6;color:#1f3a6e}
+.insight .ic{flex:0 0 auto}
+.p-foot{margin-top:9px}
+.src{color:#1d9bf0;text-decoration:none;font-size:13px}
+.empty{text-align:center;color:#9aa0a8;padding:48px 0}
+footer{text-align:center;color:#a8acb3;font-size:12px;margin-top:26px;padding:0 18px}
+@media(max-width:480px){.wrap{padding-bottom:50px}header{padding:18px 14px 12px}.posts{padding:4px 14px 14px}.author-head{padding:10px 14px}}
+</style></head><body><div class="wrap"><header><h1>X · AI 日报</h1><div class="sub">2026-09-05 ｜ 2 位博主 · 3 条动态 · 折叠 2 条 ｜ 生成于 2026-09-06 02:48</div></header><div class="warn">⚠ 本期抓取异常，内容可能不完整</div><section class="brief"><div class="brief-head">⚡ 今日要点</div><ol><li><a href="#t-2095905901018509542">实测显示GPT-Astra数学能力获质的飞跃，支持通过实时对话在Lean中现场完成形式化命题证明。</a></li></ol></section><nav class="index"><a class="idx" href="#a-lukaszkaiser"><img class="idx-av" src="https://yesiran.github.io/ai-twitter-daily/avatars/lukaszkaiser.jpg" loading="lazy" alt="" onerror="this.style.visibility='hidden'"><span>Lukasz Kaiser</span></a><a class="idx" href="#a-merettm"><img class="idx-av" src="https://yesiran.github.io/ai-twitter-daily/avatars/merettm.jpg" loading="lazy" alt="" onerror="this.style.visibility='hidden'"><span>Jakub Pachocki</span></a></nav><section class="author" id="a-lukaszkaiser"><div class="author-head"><img class="avatar" src="https://yesiran.github.io/ai-twitter-daily/avatars/lukaszkaiser.jpg" loading="lazy" alt="" onerror="this.style.visibility='hidden'"><div class="ah-text"><div class="ah-name">Lukasz Kaiser<span class="ah-handle">@lukaszkaiser</span></div><div class="ah-title"></div></div><span class="ah-count">2 条</span></div><div class="posts"><article class="post" id="t-2095905901018509542"><div class="p-top"><span class="badge mid">7.5 · 实战</span><span class="rt">🔁 转发 @nasqret</span><span class="meta">00:04 · ♥ 0 · ↺ 547</span></div><div class="p-body">RT <a href="https://x.com/nasqret" target="_blank" rel="noopener">@nasqret</a>: 我在数学方面测试了 GPT-Astra。这简直是质的飞跃。你可以与该模型实时交流，并在 Lean 中现场证明这些命题。……</div><div class="insight"><span class="ic">💡</span><span class="itext">OpenAI 核心研究员转发确认了结合低延迟实时交互与 Lean 形式化数学证明的模型（GPT-Astra）。这预示着形式化验证不再局限于离线长推理/后验跑分，正走向‘人机实时协作求解与现场证明闭环’的高确定性产品新范式。</span></div><div class="p-foot"><a class="src" href="https://x.com/lukaszkaiser/status/2095905901018509542" target="_blank" rel="noopener">看原推 ↗</a></div></article><details class="fold"><summary>1 条低相关已折叠</summary><article class="post" id="t-2095905309135135008"><div class="p-top"><span class="badge lo">2.0 · 闲聊</span><span class="rt">🔁 转发 @NateSilver538</span><span class="meta">00:02 · ♥ 0 · ↺ 4</span></div><div class="p-body">RT <a href="https://x.com/NateSilver538" target="_blank" rel="noopener">@NateSilver538</a>: 我一直在苦苦思索一个恰当的比喻。这有点像是有人发明了有感知能力的机器人，但是……</div><div class="p-foot"><a class="src" href="https://x.com/lukaszkaiser/status/2095905309135135008" target="_blank" rel="noopener">看原推 ↗</a></div></article></details></div></section><section class="author" id="a-merettm"><div class="author-head"><img class="avatar" src="https://yesiran.github.io/ai-twitter-daily/avatars/merettm.jpg" loading="lazy" alt="" onerror="this.style.visibility='hidden'"><div class="ah-text"><div class="ah-name">Jakub Pachocki<span class="ah-handle">@merettm</span></div><div class="ah-title">人工智能研究公司 OpenAI</div></div><span class="ah-count">1 条</span></div><div class="posts"><details class="fold"><summary>1 条低相关已折叠</summary><article class="post" id="t-2095912873864147029"><div class="p-top"><span class="badge lo">5.5 · 观点</span><span class="rt">🔁 转发 @kaicathyc</span><span class="meta">00:32 · ♥ 0 · ↺ 7</span></div><div class="p-body">RT <a href="https://x.com/kaicathyc" target="_blank" rel="noopener">@kaicathyc</a>: <a href="https://x.com/RyanGreenblatt" target="_blank" rel="noopener">@RyanGreenblatt</a> Astra 的提升源于更通用的技术，而这些技术早在 Hugging Face ……很久很久之前就已在开发中了</div><div class="p-foot"><a class="src" href="https://x.com/merettm/status/2095912873864147029" target="_blank" rel="noopener">看原推 ↗</a></div></article></details></div></section><footer>ai-twitter-info 自动生成 · 全中文 · 评分为按你的画像做的质量把关 · 点「看原推」回到 X</footer></div></body></html>
